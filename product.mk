@@ -3,5 +3,5 @@ $(call inherit-product, vendor/extra/facehal/facehal.mk)
 
 # GMS
 ifeq ($(WITH_GMS),true)
-$(call inherit-product-if-exists, vendor/gms/gms_full.mk)
+$(call inherit-product, vendor/pixel/gms/products/gms.mk)
 endif
